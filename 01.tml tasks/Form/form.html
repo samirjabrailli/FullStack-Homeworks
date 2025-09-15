@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Task</title>
+    <style>
+        #file-list{
+            background-color: cadetblue;
+            color: white;
+            width: 100vh;
+
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <label for="name">Name</label>
+        <input type="text"  placeholder="Name" id="name" maxlength="5">
+
+        <br><br>
+
+        <label for="number">Fav Number</label>
+
+        <input type="number" id="numer" placeholder=" Number" min="7" max="29">
+
+        <br><br>
+
+        <label for="email">Email</label>
+
+        <input type="email" id="email" placeholder="email" required>
+        <br><br>
+
+        <label for="password">password: </label>
+
+        <input type="password" id="password" placeholder="password" required minlength="5" maxlength="16">
+
+        <br><br>
+
+        <label>Gender: </label>
+
+        <label for="men">Male</label>
+
+        <input type="radio" id="men" name="gender" checked>
+
+        <label for="women">Female</label>
+
+        <input type="radio" id="women" name="gender">
+
+        <br><br>
+
+        <label>City: </label>
+
+        <select name="city" id="city">
+
+            <option value="" >Select Your City</option>
+
+            <option value="Baku">Baku</option>
+
+            <option value="Gakh">Gakh</option>
+
+            <option value="Ganja">Ganja</option>
+
+        </select>
+
+        <br><br>
+
+        <label for="message"  style="display: block;">Message: </label>
+        
+        <textarea name="" id="message" placeholder="Message" rows="10" cols="50"></textarea>
+
+        <br><br>
+
+        <label for="checkbox">Subscribe to newslatter</label>
+
+        <input type="checkbox" id="checkbox">
+
+        <br><br>
+
+        <label for="file">Upload File</label>
+
+        <input type="file" id="file" multiple>
+
+        <ul id="file-list"></ul>
+
+        <br><br>
+
+        <label>Brithday Date:</label>
+        <input type="date">
+
+        <br><br>
+
+        <label for="color">Favorit Color</label>
+        <input type="color" id="color">
+        <br><br>
+
+        <label>Personal web site</label>
+        <input type="url">
+        <br><br>
+
+        <input type="submit">
+        <input type="reset">
+
+
+    </form>
+
+    <script>
+         const input = document.getElementById("file");
+  const list = document.getElementById("file-list");
+  let filesArray = [];
+
+  input.addEventListener("change", (event) => {
+    // Yeni seçilən faylları massivə əlavə et
+    for (let file of event.target.files) {
+      filesArray.push(file);
+    }
+
+    // Siyahını təmizlə
+    list.innerHTML = "";
+
+    // Yenidən siyahını göstər
+    filesArray.forEach((f, index) => {
+      let li = document.createElement("li");
+      li.textContent = f.name;
+      list.appendChild(li);
+    });
+
+    // Input-u sıfırla ki, yenidən fayl seçmək olsun
+    input.value = "";
+  });
+    </script>
+</body>
+</html>
