@@ -4,38 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Task</title>
-    <style>
-        #file-list{
-            background-color: cadetblue;
-            color: white;
-            width: 100vh;
-
-        }
-    </style>
+    
 </head>
 <body>
-    <form >
+  <div class="form-container">
+    <form  >
         <label for="name">Name</label>
         <input type="text"  placeholder="Name" id="name" maxlength="5">
 
-        <br><br>
+        <br>
 
         <label for="number">Fav Number</label>
 
         <input type="number" id="numer" placeholder=" Number" min="7" max="29">
 
-        <br><br>
+        <br>
 
         <label for="email">Email</label>
 
         <input type="email" id="email" placeholder="email" required>
-        <br><br>
+        <br>
 
         <label for="password">password: </label>
 
         <input type="password" id="password" placeholder="password" required minlength="5" maxlength="16">
 
-        <br><br>
+        <br>
 
         <label>Gender: </label>
 
@@ -47,7 +41,7 @@
 
         <input type="radio" id="women" name="gender">
 
-        <br><br>
+        <br>
 
         <label>City: </label>
 
@@ -63,19 +57,19 @@
 
         </select>
 
-        <br><br>
+        <br>
 
         <label for="message"  style="display: block;">Message: </label>
         
         <textarea name="" id="message" placeholder="Message" rows="10" cols="50"></textarea>
 
-        <br><br>
+        <br>
 
         <label for="checkbox">Subscribe to newslatter</label>
 
         <input type="checkbox" id="checkbox">
 
-        <br><br>
+        <br>
 
         <label for="file">Upload File</label>
 
@@ -83,27 +77,28 @@
 
         <ul id="file-list"></ul>
 
-        <br><br>
+        <br>
 
         <label>Brithday Date:</label>
         <input type="date">
 
-        <br><br>
+        <br>
 
         <label for="color">Favorit Color</label>
         <input type="color" id="color">
-        <br><br>
+        <br>
 
         <label>Personal web site</label>
         <input type="url">
-        <br><br>
+        <br>
 
         <input type="submit">
+        <br>
         <input type="reset">
-
-
     </form>
 
+  </div>
+    
     <script>
          const input = document.getElementById("file");
   const list = document.getElementById("file-list");
