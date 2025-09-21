@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    background-color: brown; 
+}
+
+.outer .inner p{
+    color: cornflowerblue;
+    transition: all 1s ease;
+    &:hover{
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        
+    }
+}

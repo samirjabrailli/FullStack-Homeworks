@@ -1,0 +1,19 @@
+h3{
+    color:#291ECC;
+    font-size: 2rem;
+}
+
+p{
+    font-size: 20px;
+}
+
+p span{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h2{
+    background-color: #0000FE;
+    color: #CEC1FF;
+    padding: 15px;
+}

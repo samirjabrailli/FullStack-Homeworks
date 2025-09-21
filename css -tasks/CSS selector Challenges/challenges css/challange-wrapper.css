@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Miltonian&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+^ wrapper task
+*/
+.wrapper{
+    background-color: coral;
+    width: 100vw;
+    height: 20vh;
+}
+
+.wrapper .header h1{
+    color: white;
+    font-family: "Miltonian", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.wrapper .content{
+    display: flex;
+   gap: 10px;
+}
+
+
+.content .highlight{
+    color:blueviolet;
+    margin: 10px;
+    font-family: "Miltonian", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.content span:nth-child(2) {
+  color: cadetblue;
+  margin: 10px;
+  font-family: "Miltonian", serif;
+  font-weight: 400;
+  font-style: normal;
+}

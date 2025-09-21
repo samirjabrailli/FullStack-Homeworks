@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.ol-list{
+    background-color: #FAEBD7;
+}
+
+.ol-list li{
+    color:green;
+   margin: 25px;
+}

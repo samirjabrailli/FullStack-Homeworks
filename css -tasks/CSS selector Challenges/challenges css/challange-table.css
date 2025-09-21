@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table tr,th,td{
+    border: 2px solid cadetblue;
+    background-color: cadetblue;
+    padding: 5px;
+}
+
+table th h2{
+    color: coral;
+}
+
+table td h3{
+    color: coral;
+}
