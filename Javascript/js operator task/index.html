@@ -10,29 +10,22 @@
   
   <script>
 
-    let num1 = Number (prompt("Birinci ededi daxil edin"));
+    let num1 = Number (prompt(`Birinci ededi daxil edin:`));
 
-    alert("Birinci eded daxil edildi");
+    alert(`Birinci eded daxil edildi: ${num1}`);
 
-    let num2 = Number (prompt("Ikinci ededi daxil edin"));
+    let num2 = Number (prompt(`Ikinci ededi daxil edin:`));
 
-    alert("Ikinci  eded daxil edildi");
+    alert(`Ikinci eded daxil edildi: ${num2}`);
 
-    let emel = prompt("Emeliyyatlari daxil edin (+, -, *, /, %):");
+    let emel = prompt(`Emeliyyatlari daxil edin: (+, -, *, /, %):`);
 
-    alert("Emeliyyat daxil edildi");
+    alert(`Emeliyyat daxil edildi: ${emel}`);
 
-    let netice = 
-  (emel === "+") * (num1 + num2) +
-  (emel === "-") * (num1 - num2) +
-  (emel === "*") * (num1 * num2) +
-  (emel === "/") * (num1 / num2) +
-  (emel === "%") * (num1 % num2);
 
-    alert("Netice: " + netice);
+    let netice = eval(`${num1} ${emel} ${num2}`)
 
-    console.log(netice);
-    
+    alert(`Netice: ${num1} ${emel} ${num2} = ${netice}`);
 
   </script>
 </body>
