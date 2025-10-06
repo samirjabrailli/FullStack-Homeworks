@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Js Operator Task</title>
+</head>
+<body>
+
+  
+  <script>
+
+    let num1 = Number (prompt("Birinci ededi daxil edin"));
+
+    alert("Birinci eded daxil edildi");
+
+    let num2 = Number (prompt("Ikinci ededi daxil edin"));
+
+    alert("Ikinci  eded daxil edildi");
+
+    let emel = prompt("Emeliyyatlari daxil edin (+, -, *, /, %):");
+
+    alert("Emeliyyat daxil edildi");
+
+    let netice = 
+  (emel === "+") * (num1 + num2) +
+  (emel === "-") * (num1 - num2) +
+  (emel === "*") * (num1 * num2) +
+  (emel === "/") * (num1 / num2) +
+  (emel === "%") * (num1 % num2);
+
+    alert("Netice: " + netice);
+
+    console.log(netice);
+    
+
+  </script>
+</body>
+</html>
