@@ -18,4 +18,21 @@ products.forEach(product =>{
     <td>${product.stock}</td>
     `;
     productTableBody.appendChild(row);
+
+    const tdBtn = document.createElement('td')
+     const btn = document.createElement('button')
+    btn.textContent = "Delete"
+    tdBtn.appendChild(btn)
+    row.appendChild(tdBtn)
+    
+
+    btn.addEventListener("click", (event)=>{
+        // row.remove();
+        event.target.parentElement.parentElement.remove();
+    })
+})
+
+const clear = document.getElementById('clear');
+clear.addEventListener("click", ()=>{
+    productTableBody.innerHTML = ""
 })
