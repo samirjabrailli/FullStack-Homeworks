@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    height: 25vh;
+    margin: 0 auto;
+    padding: 0 1rem;
+    background-color: cadetblue;
+    position: relative;
+}
+
+.container p{
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.container button{
+position: absolute;
+right: 50%;
+margin: 15px;
+cursor: pointer;
+border: 4px;
+padding: 10px;
+color: green;
+transition: all 1s;
+background-color: gray;
+&:hover{
+   background-color: white;
+}
+}
